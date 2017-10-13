@@ -3,7 +3,7 @@ version: '2.1'
 services:
   users-db:
     container_name: users-db
-    build: ./users/db
+    build: https://github.com/0x4e3/flask-sandbox-users.git#master:users/db
     ports:
         - 5435:5432  # expose ports - HOST:CONTAINER
     environment:
@@ -15,9 +15,7 @@ services:
   users-service:
     container_name: users-service
     command: gunicorn -b 0.0.0.0:5000 manage:app
-    build: .
-    volumes:
-      - '.:/usr/src/app'
+    build: https://github.com/0x4e3/flask-sandbox-users.git
     expose:
       - '5000'
     environment:
