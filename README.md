@@ -5,7 +5,8 @@ Sandbox Flask application: Proxy
 
 Other components:
 * [Backend](https://github.com/0x4e3/flask-sandbox-users)  
-* [Frontend](https://github.com/0x4e3/flask-sandbox-client)
+* [Frontend](https://github.com/0x4e3/flask-sandbox-client)  
+* [Swagger](https://github.com/0x4e3/flask-sandbox-swagger)  
 
 To run containers:
 
