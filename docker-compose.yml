@@ -62,12 +62,11 @@ services:
 
   swagger:
     container_name: swagger
-    build:
-      context: ../flask-swagger
+    build: https://github.com/0x4e3/flask-sandbox-swagger
     ports:
       - '8080:8080' # expose ports - HOST:CONTAINER
     environment:
-      - API_URL=https://raw.githubusercontent.com/0x4e3/flask-swagger/master/swagger.json
+      - API_URL=https://raw.githubusercontent.com/0x4e3/flask-sandbox-swagger/master/swagger.json
     depends_on:
       users-service:
         condition: service_started
