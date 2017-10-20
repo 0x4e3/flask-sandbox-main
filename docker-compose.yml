@@ -62,7 +62,7 @@ services:
 
   swagger:
     container_name: swagger
-    build: https://github.com/0x4e3/flask-sandbox-swagger
+    build: https://github.com/0x4e3/flask-sandbox-swagger.git
     ports:
       - '8080:8080' # expose ports - HOST:CONTAINER
     environment:
